@@ -3,7 +3,6 @@
     "name": "supawater-demo",
     "slug": "supawater-demo",
     "version": "1.0.0",
-
     "scheme": "supawater-demo",
     "web": {
       "bundler": "metro",
@@ -19,30 +18,36 @@
         }
       ]
     ],
+    "newArchEnabled": true,
     "experiments": {
       "typedRoutes": true,
-
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-
     "userInterfaceStyle": "light",
-
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ivanleopoldoc.supawaterdemo"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.ivanleopoldoc.supawaterdemo"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "cd786d89-048e-48ec-9f18-5403277df89d"
       }
     }
   }
